@@ -6,6 +6,7 @@
 %\usepackage{natbib}
 \usepackage{verbatim}
 \usepackage{hyperref}
+
 \hypersetup{ 
     % change default hyperrefs set up, such as removing boxes around the link, 
     % or changing the color of the links
@@ -46,13 +47,13 @@
 
     First, we define the rational numbers.
 
-    \begin{defi}\label{defi:rational}
+    \begin{defi}\label{def:rational}
         A \emph{rational number} is a real number that can be expressed in the form $\dfrac{m}{n}$ where $m$ and $n$ are integers, and $n\ne 0$. \\
-        Rational numbers such as $5$ or $9.2$ can be expressed as $\frac{10}{2}$ and $\frac{92}{10}$ respectively. 
+        For example rational numbers such as $5$ or $9.2$ can be expressed as $\frac{10}{2}$ and $\frac{92}{10}$ respectively. 
     \end{defi}
 
     \begin{defi}\label{defi:irrationality}
-        An \emph{irrational number} is any real number that cannot be expressed as the quotient of two integers. Irrational numbers such as $\pi$ can be expressed as an infinitely expanding decimal with no regularly repeating groups of digits. 
+        An \emph{irrational number} is any real number that cannot be expressed as the quotient of two integers. Irrational numbers such as $\pi$ can not be expressed as the ratio of two integers. If expressed as a decimal, $\pi$ would be infinitely expanding with no regularly repeating groups of digits. 
     \end{defi}
     
     \section{The Proof} \label{sect:proof}
@@ -64,9 +65,8 @@
     \begin{proof}
     [{Proof of Theorem \ref{thm:main}}]\hfill\\
     
-    We will prove the statement by contradiction. First, let $\alpha=\sqrt{2}$ and, for the sake of contradiction, we assume that $\alpha$ is a rational number in lowest terms. Meaning $m$ and $q$
-    are integer numbers and have no common factors other than 1.
-    Then, we can write $\alpha=\frac{m}{n}$.
+    We will prove the statement by contradiction. First, let $\alpha=\sqrt{2}$ and, for the sake of contradiction, we assume that $\alpha$ is a rational number in lowest terms. This is because any rational number can be represented uniquely in lowest terms, and doing so prevents us from initially having a common factor which is relied upon later within the proof.\hfill\\
+    Then, we can write $\alpha=\frac{m}{n}$, where  $m$ and $q$ are integer numbers and have no common factors other than 1 (in lowest terms).\\
 
     %Complete the proof here. There will be the QED symbol at the end.
     % For large fraction and you want the brackets to extend or increase in size to match the height of the fraction, use \left( and \right) commands.
@@ -80,12 +80,12 @@
     m^2 = 2n^2.
     $$\\
     The expression $m^2 = 2n^2$ implies that the value of $m^2$ must be an even number since it is equal to 2 multiplied by some number $q^2$. Since $m^2$ is even, it is additionally implied that $m$ is even and can be divided by 2.\\
-    The fact that m is even while not trivial, can be proven with the contrapositive. \cite{Chili Math}\\\\
-    $m$ can now be represented as
+    The statement "$m$ is even" while not trivial, can be proven with the contrapositive. \cite{Chili Math}\\\\
+    The number $m$ can now be represented as
     $$m = 2m'$$
     where $m'$ is some other whole number.\\ \\
     Substituting $m$ = $2m'$ into equation $m^2 = 2n^2$, it is observed that
-    $$2m^2 = n^2$$
+    $$2m'^2 = n^2$$
     Repeating this process now for equation $n^2 = 2m^2$ can make the observation that both $m$ and $n$ share a common factor of 2, thus implying a contradiction.\\
 
     \end{proof}

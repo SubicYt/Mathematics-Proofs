@@ -28,8 +28,10 @@
 \newtheorem{defi}[thm]{Definition}
 \newtheorem{rem}[thm]{Remark}
 
-\begin{document}
+\begin{document}   
 \maketitle
+
+%MAKE NOTE ON ASSUME A IS NON ZERO
 
 \section{Introduction}
 In this short paper we will show that the Quadratic Formula can be derived from completing the square of a Quadratic Equation. In section \ref{sect:prelims} we will introduce what a quadratic equation is, the idea and process of completing the square of a quadratic equation, and the quadratic quadratic formula. In section \ref{sect:derive} we will derive the Quadratic Formula. Finally in section \ref{sect:application} we will discuss applications of the Quadratic Formula and the importance of it within mathematics.\\\\
@@ -59,13 +61,34 @@ First we will begin by defining a quadratic equation.
     The left side of the equation can be reduced to a perfect square, and moving the terms from the right side of the equation to the left of the equation yields, 
     $$(x+\frac{b}{2a})^2+\frac{c}{a}-\frac{b^2}{4a^2}=0$$
     Notice that we have an equation in the form of $a(x-h)^2+k$, where $h = -\frac{b}{2a}$ and $k=\frac{c}{a} - \frac{b^2}{4a^2}$.
+    \end{defi}
     \begin{defi}\label{def:quadraticEq}
-        
+    To find the roots of a standard form quadratic equation you can use the quadratic formula which is in the form
+    $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
     \end{defi}
-    
-    
-    \end{defi}
-\section{Derivation}    \label{sect:derive}
 
+\section{Derivation}    \label{sect:derive}
+    \begin{proof}
+    
+    Let $ax^2+bx+c=0$ be a quadratic equation in standard form, where x is a variable of unknown roots belonging to the set of real numbers, and $a,b,c$ are known coefficients that belong to the set of real numbers.\\
+    We will begin the process of completing the square of the standard polynomial, as seen in section \ref{sect:prelims}, up to the point where we arrive at,
+    $$x^2+\frac{bx}{a}+(\frac{b}{2a})^2=-(\frac{c}{a})+(\frac{b}{2a})^2$$
+    The left side of the equation can be reduced to,
+    $$(x+\frac{b}{2a})^2=-(\frac{c}{a})+\frac{b^2}{4a^2}$$
+    By taking the square root of the left and right side of the equation you are left with
+    $$x+\frac{b}{2a}=\pm\sqrt{-(\frac{c}{a})+\frac{b^2}{4a^2}}$$
+    Through cross multiplication of the terms within the radical sign on the right side of the equation you yield,
+    $$x+\frac{b}{2a}=\pm\sqrt{\frac{-4a^2c+ab^2}{4a^3}}$$
+    Notice that the right side of the equation above can factor out an $a$,
+    $$x+\frac{b}{2a}=\pm\sqrt{\frac{-4ac+b^2}{4a^2}}$$
+    Additionally notice that the denominator of the right side of the equation is $\sqrt{4a^2}$, which can be further simplified,
+    $$x+\frac{b}{2a}={\pm\frac{\sqrt{-4ac+b^2}}{2a}}$$
+    Subtracting $\frac{b}{2a}$ from both sides of the equation to isolate $a$, and noticing the like denominators of 2a on the right side finally yields,
+     $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+    \end{proof}
 \section{Applications}  \label{sect:application}
+
+\begin{thebibliography}{100}
+       
+\end{thebibliography}
 \end{document}

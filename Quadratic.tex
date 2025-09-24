@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{graphicx, amsmath, amsthm, amssymb}
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+%\usepackage{natbib}
+\usepackage{verbatim}
+\usepackage{hyperref}
+
+\hypersetup{ 
+    % change default hyperrefs set up, such as removing boxes around the link, 
+    % or changing the color of the links
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=cyan,
+    citecolor=red,
+    filecolor=magenta,     
+}
+
+\title{Proof Of Quadratic Formula}
+\author{Ethan Denning}
+\date{September 22, 2025}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+
+\theoremstyle{definition}
+\newtheorem{defi}[thm]{Definition}
+\newtheorem{rem}[thm]{Remark}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+In this short paper we will show that the Quadratic Formula can be derived from completing the square of a Quadratic Equation. In section \ref{sect:prelims} we will introduce what a quadratic equation is, the idea and process of completing the square of a quadratic equation, and the quadratic quadratic formula. In section \ref{sect:derive} we will derive the Quadratic Formula. Finally in section \ref{sect:application} we will discuss applications of the Quadratic Formula and the importance of it within mathematics.\\\\
+It is additionally worth mentioning that throughout this paper we will be working over the set of real numbers with quadratic equations that only yield real solutions. 
+
+\section{Preliminaries} \label{sect:prelims}
+First we will begin by defining a quadratic equation.
+    \begin{defi}\label{def:quadratic}
+    A quadratic equation is a polynomial of degree two which can be represented in the standard form\hfill\\
+    $$ax^2+bx+c=0$$
+    The variable $x$ represents an unknown number belonging to the set of real numbers, and $a, b, $ and $c$ represent known numbers that belong to the set of real numbers.\\
+    Additionally, the values of $x$ that satisfy the quadratic equation are known as the equation's roots or zeroes. For the sake of working specifically over the set of real numbers a quadratic equation can have at most two real roots.\\
+    \end{defi}
+    \begin{defi}\label{def:compSquare}
+    Completing the square of a quadratic equation is the process of taking a quadratic polynomial in standard form,\\
+    $$ax^2+bc+c=0$$
+    and converting it to form,
+    $$a(x-h)^2+k$$
+    where $h$ and $k$ belong to the set of real numbers.
+    The process of completing the square can be broken up into elementary steps as such.\\
+    Given standard form quadratic equation, $$ax^2+bx+c=0$$
+    divide the equation by a so that $x$ no longer has a coefficient, $$x^2+\frac{bx}{a}+\frac{c}{a}=0$$
+    Subtracting $\frac{c}{a}$ from both sides of the equations yields, 
+    $$x^2+\frac{bx}{a}=-\frac{c}{a}$$
+    Additionally we will add $(\frac{b}{2a})^2$ to both sides of the equation to give us,
+    $$x^2+\frac{bx}{a}+(\frac{b}{2a})^2= -(\frac{c}{a}) + (\frac{b}{2a})^2$$
+    The left side of the equation can be reduced to a perfect square, and moving the terms from the right side of the equation to the left of the equation yields, 
+    $$(x+\frac{b}{2a})^2+\frac{c}{a}-\frac{b^2}{4a^2}=0$$
+    Notice that we have an equation in the form of $a(x-h)^2+k$, where $h = -\frac{b}{2a}$ and $k=\frac{c}{a} - \frac{b^2}{4a^2}$.
+    \begin{defi}\label{def:quadraticEq}
+        
+    \end{defi}
+    
+    
+    \end{defi}
+\section{Derivation}    \label{sect:derive}
+
+\section{Applications}  \label{sect:application}
+\end{document}
